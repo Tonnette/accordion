@@ -66,108 +66,106 @@ class Form extends Component {
       AccordionBody3,
     } = this.state;
     return (
-      <div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 col-md-12 col-sm-12">
-              <Jumbotron>
-                <h1>
-                  <strong>Accordion App</strong>
-                </h1>
-              </Jumbotron>
-            </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <Jumbotron>
+              <h1>
+                <strong>Accordion App</strong>
+              </h1>
+            </Jumbotron>
           </div>
-          <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-              <p className="myName">
-                <strong>Header Input 1</strong>
+        </div>
+        <div className="row">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <p className="myName">
+              <strong>Header Input 1</strong>
+            </p>
+            <form onSubmit={this.handleSubmit}>
+              <p>
+                <input
+                  type="text"
+                  placeholder="Accordion header"
+                  name="AccordionHeader"
+                  onChange={this.handleInputChange1}
+                ></input>
               </p>
-              <form onSubmit={this.handleSubmit}>
-                <p>
-                  <input
-                    type="text"
-                    placeholder="Accordion header"
-                    name="AccordionHeader"
-                    onChange={this.handleInputChange1}
-                  ></input>
-                </p>
-                <p className="myName">
-                  <strong>Body Input 1</strong>
-                </p>
-
-                <p>
-                  <input
-                    type="text"
-                    placeholder="Accordion body"
-                    name="AccordionBody"
-                    onChange={this.handleInputChange1}
-                  ></input>
-                </p>
-                <p className="myName">
-                  <Button>Send to Accordion 1</Button>
-                </p>
-              </form>
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
               <p className="myName">
-                <strong>Header Input 2</strong>
+                <strong>Body Input 1</strong>
               </p>
-              <form onSubmit={this.handleSubmit}>
-                <p>
-                  <input
-                    type="text"
-                    placeholder="Accordion header"
-                    name="AccordionHeader2"
-                    onChange={this.handleInputChange2}
-                  ></input>
-                </p>
-                <p className="myName">
-                  <strong>Body Input 2</strong>
-                </p>
 
-                <p className="myName">
-                  <input
-                    type="text"
-                    placeholder="Accordion body"
-                    name="AccordionBody2"
-                    onChange={this.handleInputChange2}
-                  ></input>
-                </p>
-                <p className="myName">
-                  <Button variant="warning">Send to Accordion 2</Button>
-                </p>
-              </form>
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <p>
+                <input
+                  type="text"
+                  placeholder="Accordion body"
+                  name="AccordionBody"
+                  onChange={this.handleInputChange1}
+                ></input>
+              </p>
               <p className="myName">
-                <strong>Header Input 3</strong>
+                <Button>Send to Accordion 1</Button>
               </p>
-              <form onSubmit={this.handleSubmit}>
-                <p>
-                  <input
-                    type="text"
-                    placeholder="Accordion header"
-                    name="AccordionHeader3"
-                    onChange={this.handleInputChange3}
-                  ></input>
-                </p>
-                <p className="myName">
-                  <strong>Body Input 3</strong>
-                </p>
+            </form>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <p className="myName">
+              <strong>Header Input 2</strong>
+            </p>
+            <form onSubmit={this.handleSubmit}>
+              <p>
+                <input
+                  type="text"
+                  placeholder="Accordion header"
+                  name="AccordionHeader2"
+                  onChange={this.handleInputChange2}
+                ></input>
+              </p>
+              <p className="myName">
+                <strong>Body Input 2</strong>
+              </p>
 
-                <p className="myName">
-                  <input
-                    type="text"
-                    placeholder="Accordion body"
-                    name="AccordionBody3"
-                    onChange={this.handleInputChange3}
-                  ></input>
-                </p>
-                <p className="myName">
-                  <Button variant="info">Send to Accordion 3</Button>
-                </p>
-              </form>
-            </div>
+              <p className="myName">
+                <input
+                  type="text"
+                  placeholder="Accordion body"
+                  name="AccordionBody2"
+                  onChange={this.handleInputChange2}
+                ></input>
+              </p>
+              <p className="myName">
+                <Button variant="warning">Send to Accordion 2</Button>
+              </p>
+            </form>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <p className="myName">
+              <strong>Header Input 3</strong>
+            </p>
+            <form onSubmit={this.handleSubmit}>
+              <p>
+                <input
+                  type="text"
+                  placeholder="Accordion header"
+                  name="AccordionHeader3"
+                  onChange={this.handleInputChange3}
+                ></input>
+              </p>
+              <p className="myName">
+                <strong>Body Input 3</strong>
+              </p>
+
+              <p className="myName">
+                <input
+                  type="text"
+                  placeholder="Accordion body"
+                  name="AccordionBody3"
+                  onChange={this.handleInputChange3}
+                ></input>
+              </p>
+              <p className="myName">
+                <Button variant="info">Send to Accordion 3</Button>
+              </p>
+            </form>
           </div>
         </div>
 

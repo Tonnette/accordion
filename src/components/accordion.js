@@ -1,34 +1,18 @@
-import React, { Component } from "react";
+import { FaTimes } from "react-icons/fa";
 
-class Accordion extends Component {
-  state = {};
-  render() {
-    return (
-      <div>
-        <details>
-          <summary>
-            <strong>Accordion 1</strong>
-          </summary>
-
-          <p>inside accordion</p>
-        </details>
-        <details>
-          <summary>
-            <strong>Accordion 2</strong>
-          </summary>
-
-          <p>inside accordion</p>
-        </details>
-        <details>
-          <summary>
-            <strong>Accordion 3</strong>
-          </summary>
-
-          <p>inside accordion</p>
-        </details>
-      </div>
-    );
-  }
-}
+const Accordion = ({ accordion, onDelete }) => {
+  return (
+    <div>
+      <h3>
+        {accordion.header}{" "}
+        <FaTimes
+          style={{ color: "red", curson: "pointer" }}
+          onClick={() => onDelete(accordion.id)}
+        />
+      </h3>
+      <p>{accordion.body}</p>
+    </div>
+  );
+};
 
 export default Accordion;

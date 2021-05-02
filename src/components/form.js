@@ -30,12 +30,10 @@ class Form extends Component {
   //     console.log("new state", this.state.accordions);
   //   };
 
-  handleSubmit = (event) => {
+  handleSub1 = (event) => {
     event.preventDefault();
     const data = this.state;
-    console.log("finale data is", data.AccordionHeader, data.AccordionBody);
-    console.log("finale data is", data.AccordionHeader2, data.AccordionBody2);
-    console.log("finale data is", data.AccordionHeader3, data.AccordionBody3);
+    console.log("finale data is", data);
   };
 
   handleInputChange1 = (event) => {
@@ -81,7 +79,7 @@ class Form extends Component {
             <p className="myName">
               <strong>Header Input 1</strong>
             </p>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSub1}>
               <p>
                 <input
                   type="text"
@@ -111,7 +109,7 @@ class Form extends Component {
             <p className="myName">
               <strong>Header Input 2</strong>
             </p>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSub2}>
               <p>
                 <input
                   type="text"
@@ -141,7 +139,7 @@ class Form extends Component {
             <p className="myName">
               <strong>Header Input 3</strong>
             </p>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSub3}>
               <p>
                 <input
                   type="text"
@@ -192,11 +190,11 @@ class Form extends Component {
           </Card>
           <Card>
             <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
+              <Accordion.Toggle as={Button} variant="link" eventKey="2">
                 3. {AccordionHeader3}
               </Accordion.Toggle>
             </Card.Header>
-            <Accordion.Collapse eventKey="1">
+            <Accordion.Collapse eventKey="2">
               <Card.Body>{AccordionBody3}</Card.Body>
             </Accordion.Collapse>
           </Card>

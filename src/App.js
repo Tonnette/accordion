@@ -1,29 +1,18 @@
-import React, { Component } from "react";
 import { useState } from "react";
-// import Form from "./components/Form";
 import "./App.css";
-import Header from "./components/Header";
 import Accordions from "./components/Accordions";
 import AddAccordion from "./components/AddAccordion";
+// import PropTypes from "prop-types";
 
 const App = () => {
-  const [accordions, setAccordions] = useState([
-    {
-      id: 1,
-      header: "Header One",
-      body: "Body One",
-    },
-    {
-      id: 2,
-      header: "Header Two",
-      body: "Body Two",
-    },
-    {
-      id: 3,
-      header: "Header Three",
-      body: "Body Three",
-    },
-  ]);
+  const [accordions, setAccordions] = useState([]);
+
+  //Adding default Props
+  App.defaultProps = {
+    id: 1,
+    header: "click to reveal",
+    body: "body",
+  };
 
   //Add Accordion
   const addAccordion = (accordion) => {
@@ -42,7 +31,7 @@ const App = () => {
     //   <Form />
     // </div>
     <div>
-      <Header />
+      {/* <Header /> */}
       <AddAccordion onAdd={addAccordion} />
       <Accordions accordions={accordions} onDelete={deleteAccordion} />
     </div>

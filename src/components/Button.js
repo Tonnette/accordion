@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+// import Button from "react-bootstrap/Button";
 
 const Button = ({ color, text, onClick }) => {
   return (
     <button
       onClick={onClick}
-      style={{ backgroundColor: color }}
+      style={{ backgroundColor: "red" }}
       className="btn"
     >
       {text}

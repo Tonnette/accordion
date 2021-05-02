@@ -1,10 +1,10 @@
-import Accordion from "./Accordion";
+import MyAccordion from "./MyAccordion";
 
 const Accordions = ({ accordions, onDelete }) => {
   return (
     <>
       {accordions.map((accordion) => (
-        <Accordion
+        <MyAccordion
           key={accordion.id}
           accordion={accordion}
           onDelete={onDelete}

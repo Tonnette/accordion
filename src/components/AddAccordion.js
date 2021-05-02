@@ -52,15 +52,6 @@ const AddAccordion = ({ onAdd }) => {
               />
             </InputGroup>
             <br />
-
-            {/* <input
-                type="text"
-                placeholder="Add Header"
-                value={header}
-                onChange={(e) => setHeader(e.target.value)}
-              ></input> */}
-
-            {/* <label className="myHeader">Body Text</label> */}
             <InputGroup>
               <InputGroup.Prepend>
                 <InputGroup.Text>Body Text</InputGroup.Text>
@@ -72,13 +63,7 @@ const AddAccordion = ({ onAdd }) => {
                 onChange={(e) => setBody(e.target.value)}
               />
             </InputGroup>
-            {/* 
-            <input
-              type="text"
-              placeholder="Add Body"
-              value={body}
-              onChange={(e) => setBody(e.target.value)}
-            ></input> */}
+
             <br />
             <Button
               variant="primary"
